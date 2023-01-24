@@ -1,0 +1,25 @@
+{
+  "useWorkspaces": true,
+  "version": "0.0.0",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "push": true,
+      "ignoreChanges": [
+        "**/*.md",
+        "**/tests/**"
+      ],
+      "registry": "https://npm.pkg.github.com"
+    },
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "push": true,
+      "createRelease": "github",
+      "message": "chore(release): publish"
+    },
+    "create": {
+      "license": "SEE LICENSE IN LICENSE"
+    }
+  }
+}
