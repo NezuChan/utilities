@@ -4,8 +4,8 @@
   "description": "Common Utilities packages for NezuChan Projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src --ext ts",
-    "lint:fix": "eslint src --fix --ext ts",
+    "lint": "eslint packages --ext ts",
+    "lint:fix": "eslint packages --fix --ext ts",
     "build": "swc src -d dist"
   },
   "type": "module",
