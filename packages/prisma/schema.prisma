@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Guild {
+  guildId              String              @id @db.VarChar
+  locale               String              @default("en-US")
+  DJRoles              String[]            @default([])
+  DJUsers              String[]            @default([])
+  prefix               String?
+
+  premiumTierType      TierType            @default(FREE)
+  premiumActivatedBy   String?
+}
+
+model defaultVolume {
+  guildId              String              @id @db.VarChar
+  activatedBy          String
+  defaultVolume        Int                 @default(100)
+}
+
+model clearQueueAfterEnd {
+  guildId              String              @id @db.VarChar
+  activatedBy          String
+  enabled              Boolean             @default(true)
+}
+
+model DJMode {
+  guildId              String              @id @db.VarChar
+  activatedBy          String
+  enabled              Boolean             @default(false)
+}
+
+model autoPlay {
+  guildId          String  @id @db.VarChar
+  activatedBy      String
+  enabled          Boolean @default(true)
+}
+
+model announceTrackStart {
+  guildId          String  @id @db.VarChar
+  activatedBy      String
+  enabled          Boolean @default(true)
+  channel          String?
+}
+
+model StayInVc {
+  guildId          String  @id @db.VarChar
+  activatedBy      String
+  enabled          Boolean @default(false)
+}
+
+model PremiumUser {
+  id            Int         @id @default(autoincrement())
+  userId        String?     @unique
+  patreonUserId String?     @unique
+  tier          TierType    @default(FREE)
+  type          PremiumType @default(OTHER)
+
+  additionalTracksSize    Int @default(0)
+  additionalPlaylistsSize Int @default(0)
+  tier1Tickets            Int @default(0)
+  tier2Tickets            Int @default(0)
+}
+
+enum TierType {
+  FREE
+  TIER_1
+  TIER_2
+}
+
+enum PremiumType {
+  OTHER
+  PATREON
+  GIVEAWAY
+}
+
+model Playlist {
+  playlistId           String @id @db.VarChar
+  userId               String
+  playlistName         String
+  trackLimit           Int    @default(20)
+
+  tracks               PlaylistTrack[]
+}
+
+model PlaylistTrack {
+  trackId         String @id @db.VarChar
+  userId          String
+  playlistId      String
+  track           Json
+
+  playlist        Playlist @relation(fields: [playlistId], references: [playlistId], onDelete: Cascade, onUpdate: NoAction)
+}
