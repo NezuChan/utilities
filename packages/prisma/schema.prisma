@@ -10,12 +10,28 @@ datasource db {
 model Guild {
   guildId              String              @id @db.VarChar
   locale               String              @default("en-US")
-  DJRoles              String[]            @default([])
-  DJUsers              String[]            @default([])
+  DJRoles              DJRole[]
+  DJUsers              DJUser[]
   prefix               String?
 
   premiumTierType      TierType            @default(FREE)
   premiumActivatedBy   String?
+}
+
+model DJRole {
+  roleId              String              @id @db.VarChar
+  authorId            String
+  guildId             String
+
+  guild               Guild @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model DJUser {
+  userId              String              @id @db.VarChar
+  authorId            String
+  guildId             String
+
+  guild               Guild @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model defaultVolume {
