@@ -25,18 +25,19 @@
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
     "parserOptions": {
-      "project": "./tsconfig.json"
+        "project": "./tsconfig.json"
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "@hazmi35/eslint-config/typescript"
+    "plugins": [
+        "@typescript-eslint"
     ],
-    "rules": {}
+    "extends": [
+        "@hazmi35/eslint-config/typescript"
+    ],
+    "rules": {
+        "class-methods-use-this": "off",
+        "@typescript-eslint/naming-convention": "off"
+    }
   },
   "workspaces": [
     "packages/*"
