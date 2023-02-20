@@ -31,6 +31,14 @@
 			"dist/*"
 		]
   },
+  "files": [
+		"dist/**/*.js*",
+		"dist/**/*.mjs*",
+		"dist/**/*.d*",
+		"migrations/**/*.sql",
+		"migrations/migration_lock.toml",
+		"schema.prisma"
+	],
   "dependencies": {
     "@prisma/client": "^4.10.1"
   }
