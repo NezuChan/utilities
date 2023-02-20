@@ -10,36 +10,69 @@ datasource db {
 model Guild {
   guildId              String              @id @db.VarChar
   locale               String              @default("en-US")
-  DJRoles              String[]            @default([])
-  DJUsers              String[]            @default([])
+  DJRoles              DJRole[]
+  DJUsers              DJUser[]
   prefix               String?
+
+  defaultVolume        defaultVolume?
+  clearQueueAfterEnd   clearQueueAfterEnd?
+  DJMode               DJMode?
+  autoPlay             autoPlay?
+  announceTrackStart   announceTrackStart?
+  stayInVc             StayInVc?
+  phising              Phising?
+  invite               Invite?
 
   premiumTierType      TierType            @default(FREE)
   premiumActivatedBy   String?
+}
+
+model DJRole {
+  roleId              String              @id @db.VarChar
+  authorId            String
+  guildId             String
+
+  guild               Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model DJUser {
+  userId              String              @id @db.VarChar
+  authorId            String
+  guildId             String
+
+  guild               Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model defaultVolume {
   guildId              String              @id @db.VarChar
   activatedBy          String
   defaultVolume        Int                 @default(100)
+
+  guild                Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model clearQueueAfterEnd {
   guildId              String              @id @db.VarChar
   activatedBy          String
   enabled              Boolean             @default(true)
+  
+  guild                Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model DJMode {
   guildId              String              @id @db.VarChar
   activatedBy          String
   enabled              Boolean             @default(false)
+  
+  guild                Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model autoPlay {
   guildId          String  @id @db.VarChar
   activatedBy      String
-  enabled          Boolean @default(true)
+  enabled          Boolean @default(false)
+  
+  guild            Guild   @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model announceTrackStart {
@@ -47,12 +80,16 @@ model announceTrackStart {
   activatedBy      String
   enabled          Boolean @default(true)
   channel          String?
+  
+  guild            Guild   @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model StayInVc {
   guildId          String  @id @db.VarChar
   activatedBy      String
   enabled          Boolean @default(false)
+  
+  guild            Guild   @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model PremiumUser {
@@ -68,16 +105,22 @@ model PremiumUser {
   tier2Tickets            Int @default(0)
 }
 
-enum TierType {
-  FREE
-  TIER_1
-  TIER_2
+model Invite {
+  id          Int           @id @default(autoincrement())
+  guildId     String        @unique
+  enabled     Boolean       @default(false)
+  adminBypass Boolean       @default(false)
+
+  guild       Guild         @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
-enum PremiumType {
-  OTHER
-  PATREON
-  GIVEAWAY
+model Phising {
+  id        Int           @id @default(autoincrement())
+  guildId   String        @unique
+  enabled   Boolean       @default(false)
+  level     PhisingLevel  @default(MEDIUM)
+
+  guild     Guild         @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model Playlist {
@@ -96,4 +139,23 @@ model PlaylistTrack {
   track           Json
 
   playlist        Playlist @relation(fields: [playlistId], references: [playlistId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+enum PhisingLevel {
+  LOW
+  MEDIUM
+  HIGH
+  HIGHEST
+}
+
+enum TierType {
+  FREE
+  TIER_1
+  TIER_2
+}
+
+enum PremiumType {
+  OTHER
+  PATREON
+  GIVEAWAY
 }
