@@ -111,7 +111,7 @@ model Invite {
   enabled     Boolean       @default(false)
   adminBypass Boolean       @default(false)
 
-  guild       Guild         @relation(fields: [guildId], references: [guildId])
+  guild       Guild         @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model Phising {
@@ -120,7 +120,7 @@ model Phising {
   enabled   Boolean       @default(false)
   level     PhisingLevel  @default(MEDIUM)
 
-  guild     Guild         @relation(fields: [guildId], references: [guildId])
+  guild     Guild         @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model Playlist {
