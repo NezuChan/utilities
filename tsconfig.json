@@ -18,5 +18,5 @@
         "typeRoots": ["node_modules/@types", "src/typings"]
     },
     "exclude": ["node_modules", "node_modules/**/**.d.ts"],
-    "include": ["packages/**/**.ts", "src/**/**.json", "tsup.config.ts"],
+    "include": ["packages/**/**.ts", "tsup.config.ts"],
 }
