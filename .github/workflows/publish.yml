@@ -1,0 +1,10 @@
+name: Publish
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  test:
+    uses: nezuchan/workflows/.github/workflows/lerna-release.yml@main
+    secrets: inherit
