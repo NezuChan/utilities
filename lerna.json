@@ -9,7 +9,7 @@
         "**/*.md",
         "**/tests/**"
       ],
-      "registry": "https://npm.pkg.github.com"
+      "registry": "https://registry.npmjs.org"
     },
     "version": {
       "allowBranch": "main",
@@ -19,7 +19,7 @@
       "message": "chore(release): publish"
     },
     "create": {
-      "license": "SEE LICENSE IN LICENSE"
+      "license": "GPL-3.0"
     }
   }
 }
