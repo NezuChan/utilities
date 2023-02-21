@@ -1,1 +1,1 @@
-export const main = (): string => "Hello, world! ";
+export * from "prisma-redis-middleware";
