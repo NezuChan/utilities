@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.1.1...@nezuchan/prisma@0.1.2) (2023-02-21)
+
+
+### Bug Fixes
+
+* remove typings ([6484e1a](https://github.com/NezuChan/utilities/commit/6484e1ae4ddd17f505e8c7bb8ec7f0f710ccfb29))
+* skip lib check ([c47cff4](https://github.com/NezuChan/utilities/commit/c47cff41745d31ae5447a8f0e06a0722563e3eae))
+* use tsc ([445e186](https://github.com/NezuChan/utilities/commit/445e186b35a2376325a5d16a365377c3970d27ba))
+
+
+
+
+
 ## [0.1.1](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.1.0...@nezuchan/prisma@0.1.1) (2023-02-21)
 
 
