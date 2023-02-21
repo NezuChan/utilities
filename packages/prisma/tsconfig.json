@@ -5,6 +5,8 @@
 		"rootDir": "src",
 		"composite": true,
 		"preserveConstEnums": true,
+		"declaration": true,
+		"declarationMap": true,
 		"tsBuildInfoFile": "./dist/.tsbuildinfo"
 	},
 	"include": ["src"]
