@@ -9,6 +9,10 @@
     "lint:fix": "eslint src --fix --ext ts",
     "build": "swc src -d dist"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "type": "module",
   "author": "KagChi",
   "license": "GPL-3.0",
