@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.1.0...@nezuchan/prisma@0.1.1) (2023-02-21)
+
+
+### Features
+
+* **prisma:** export prisma-redis-middleware ([d25eb56](https://github.com/NezuChan/utilities/commit/d25eb5683d14b1a40218469cbffef387cc8891c3))
+
+
+
+
+
 # 0.1.0 (2023-02-21)
 
 
