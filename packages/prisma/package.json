@@ -1,6 +1,6 @@
 {
   "name": "@nezuchan/prisma",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A package that contains shared prisma schema and some utilities",
   "main": "dist",
   "scripts": {
@@ -28,21 +28,21 @@
   },
   "eslintConfig": {
     "parserOptions": {
-			"project": "./tsconfig.eslint.json"
-		},
-		"extends": "@hazmi35/eslint-config/typescript",
-		"ignorePatterns": [
-			"dist/*"
-		]
+      "project": "./tsconfig.eslint.json"
+    },
+    "extends": "@hazmi35/eslint-config/typescript",
+    "ignorePatterns": [
+      "dist/*"
+    ]
   },
   "files": [
-		"dist/**/*.js*",
-		"dist/**/*.mjs*",
-		"dist/**/*.d*",
-		"migrations/**/*.sql",
-		"migrations/migration_lock.toml",
-		"schema.prisma"
-	],
+    "dist/**/*.js*",
+    "dist/**/*.mjs*",
+    "dist/**/*.d*",
+    "migrations/**/*.sql",
+    "migrations/migration_lock.toml",
+    "schema.prisma"
+  ],
   "dependencies": {
     "@prisma/client": "^4.10.1"
   }
