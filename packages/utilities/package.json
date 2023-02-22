@@ -37,7 +37,10 @@
     "extends": "@hazmi35/eslint-config/typescript",
     "ignorePatterns": [
       "dist/*"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-extraneous-class": "off"
+    }
   },
   "files": [
     "dist/**/*.js*",
