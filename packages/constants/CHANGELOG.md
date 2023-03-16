@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.2.0...@nezuchan/constants@0.2.1) (2023-03-16)
+
+
+### Features
+
+* add input events ([ad0cacb](https://github.com/NezuChan/utilities/commit/ad0cacbbb84f3bc7ab12db5be94e46f7404c3cf4))
+
+
+
+
+
 # [0.2.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.1.0...@nezuchan/constants@0.2.0) (2023-02-23)
 
 
