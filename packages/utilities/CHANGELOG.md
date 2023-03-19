@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.1.1...@nezuchan/utilities@0.2.0) (2023-03-19)
+
+
+### Features
+
+* add nezu snowflake ([d506841](https://github.com/NezuChan/utilities/commit/d506841510283a82230e0c548e3b83d308d6cffb))
+
+
+
+
+
 ## [0.1.1](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.1.0...@nezuchan/utilities@0.1.1) (2023-03-14)
 
 
