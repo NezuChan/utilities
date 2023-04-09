@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.2.0...@nezuchan/utilities@0.3.0) (2023-04-09)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([497af6a](https://github.com/NezuChan/utilities/commit/497af6adf829cd5d7a04edbefb31dcc022ecb881))
+* tsconfig issues ([77d7caf](https://github.com/NezuChan/utilities/commit/77d7caf1d0025325a077b5ba043b3d5093fe803b))
+
+
+### Features
+
+* add redis sscan utilities ([1d0f493](https://github.com/NezuChan/utilities/commit/1d0f49325e72636fb5856c255c8025cb4bd85e7c))
+
+
+
+
+
 # [0.2.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.1.1...@nezuchan/utilities@0.2.0) (2023-03-19)
 
 
