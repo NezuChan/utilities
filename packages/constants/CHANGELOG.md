@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.2.1...@nezuchan/constants@0.3.0) (2023-04-09)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([497af6a](https://github.com/NezuChan/utilities/commit/497af6adf829cd5d7a04edbefb31dcc022ecb881))
+* export enum ([b91a41d](https://github.com/NezuChan/utilities/commit/b91a41dfe2b1901d9a1196e4465828b1457f9918))
+* tsconfig issues ([77d7caf](https://github.com/NezuChan/utilities/commit/77d7caf1d0025325a077b5ba043b3d5093fe803b))
+
+
+### Features
+
+* add additional constants ([2c09266](https://github.com/NezuChan/utilities/commit/2c092666080345b0e49fbf2f69146facbf372cc4))
+
+
+
+
+
 ## [0.2.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.2.0...@nezuchan/constants@0.2.1) (2023-03-16)
 
 

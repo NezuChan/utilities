@@ -1,6 +1,6 @@
 {
   "name": "@nezuchan/constants",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A package that contains shared constants",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
