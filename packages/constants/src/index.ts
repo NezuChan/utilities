@@ -4,3 +4,4 @@ export * from "./Players/LoopType.js";
 export * from "./Players/LavalinkEvents.js";
 export * from "./Emoji.js";
 export * from "./Players/InputEvents.js";
+export * from "./Redis.js";
