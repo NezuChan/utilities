@@ -6,7 +6,10 @@ export enum RabbitMQ {
     TASKS_RECV = "scheduled-tasks.recv",
     API_RECV = "nezu-api.recv",
     API_SEND = "nezu-api.send",
-    BOT_RPC = "nezu-bot.rpc"
+    BOT_RPC = "nezu-bot.rpc",
+    GATEWAY_EXCHANGE = "nezu-gateway",
+    GATEWAY_QUEUE_RECV = "nezu-gateway.recv",
+    GATEWAY_QUEUE_SEND = "nezu-gateway.send"
 }
 
 export enum RabbitMQRpc {
