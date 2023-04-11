@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.4.1...@nezuchan/constants@0.5.0) (2023-04-11)
+
+
+### Features
+
+* add util function ([d20531c](https://github.com/NezuChan/utilities/commit/d20531c559453a84c46c19828be24c491ddcf469))
+
+
+
+
+
 ## [0.4.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.4.0...@nezuchan/constants@0.4.1) (2023-04-11)
 
 
