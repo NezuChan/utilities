@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.4.0...@nezuchan/constants@0.4.1) (2023-04-11)
+
+
+### Bug Fixes
+
+* stringify limit enum ([19cf8db](https://github.com/NezuChan/utilities/commit/19cf8db2be13f5bbbac736cfcaa26a59def7c48c))
+
+
+
+
+
 # [0.4.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.3.0...@nezuchan/constants@0.4.0) (2023-04-11)
 
 
