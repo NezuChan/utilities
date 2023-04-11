@@ -49,6 +49,6 @@
     "dist/**/*.d*"
   ],
   "dependencies": {
-    "@sapphire/snowflake": "^3.4.0"
+    "@sapphire/snowflake": "^3.4.1"
   }
 }
