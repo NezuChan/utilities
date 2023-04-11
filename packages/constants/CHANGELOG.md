@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.0...@nezuchan/constants@0.5.1) (2023-04-11)
+
+
+### Features
+
+* add vote queue limit ([9ff07bd](https://github.com/NezuChan/utilities/commit/9ff07bd9c73d5dc09e88c371892207562afe9c88))
+
+
+
+
+
 # [0.5.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.4.1...@nezuchan/constants@0.5.0) (2023-04-11)
 
 
