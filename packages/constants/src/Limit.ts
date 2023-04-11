@@ -2,6 +2,7 @@ export enum QueueLimit {
     FREE = 350,
     USER_TIER_1 = 512,
     GUILD_TIER_1 = 320,
+    VOTE = 800,
     TIER_2 = Number.MAX_SAFE_INTEGER
 }
 
