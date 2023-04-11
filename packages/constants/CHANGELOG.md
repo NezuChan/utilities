@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.3.0...@nezuchan/constants@0.4.0) (2023-04-11)
+
+
+### Features
+
+* add limit enum ([fbacbff](https://github.com/NezuChan/utilities/commit/fbacbffbd2b9b4c14d30dd71893d30ab5d20ba14))
+
+
+
+
+
 # [0.3.0](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.2.1...@nezuchan/constants@0.3.0) (2023-04-09)
 
 
