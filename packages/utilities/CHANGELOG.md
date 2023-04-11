@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.3.0...@nezuchan/utilities@0.3.1) (2023-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update sapphire dependencies ([7925d7d](https://github.com/NezuChan/utilities/commit/7925d7dfc79931d394d615db51cb57125efa9a7b))
+
+
+### Features
+
+* add new util ([19c8ef0](https://github.com/NezuChan/utilities/commit/19c8ef0b9a6ca157a5e1b5656599fb5a2ee8e92a))
+
+
+
+
+
 # [0.3.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.2.0...@nezuchan/utilities@0.3.0) (2023-04-09)
 
 
