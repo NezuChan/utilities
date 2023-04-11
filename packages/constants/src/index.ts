@@ -5,3 +5,4 @@ export * from "./Players/LavalinkEvents.js";
 export * from "./Emoji.js";
 export * from "./Players/InputEvents.js";
 export * from "./Redis.js";
+export * from "./Limit.js";
