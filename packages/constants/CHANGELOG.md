@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.1...@nezuchan/constants@0.5.2) (2023-04-11)
+
+
+### Features
+
+* add new limit ([cc34215](https://github.com/NezuChan/utilities/commit/cc3421598c8d2fd2f18711bdb5ed229bbad814c4))
+
+
+
+
+
 ## [0.5.1](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.0...@nezuchan/constants@0.5.1) (2023-04-11)
 
 
