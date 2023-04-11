@@ -18,6 +18,12 @@ export enum PlaylistTrackLimit {
     TIER_2 = 70
 }
 
+export enum AutoPlayLimit {
+    FREE = 1,
+    TIER_1 = 3,
+    TIER_2 = 10
+}
+
 export function resolveQueueLimit(tier: number | string, user?: boolean): number {
     switch (tier) {
         case "TIER_1":
@@ -54,5 +60,18 @@ export function resolvePlaylistTrackLimit(tier: number | string): number {
             return PlaylistTrackLimit.TIER_2;
         default:
             return PlaylistTrackLimit.FREE;
+    }
+}
+
+export function resolveAutoPlayLimit(tier: number | string): number {
+    switch (tier) {
+        case "TIER_1":
+        case 1:
+            return AutoPlayLimit.TIER_1;
+        case "TIER_2":
+        case 2:
+            return AutoPlayLimit.TIER_2;
+        default:
+            return AutoPlayLimit.FREE;
     }
 }
