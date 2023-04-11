@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import fs from "node:fs";
 
 export class Util {
@@ -20,5 +21,16 @@ export class Util {
             day: "numeric",
             hour12: false
         }));
+    }
+
+    public static moveArray<T>(arr: T[], old_index: number, new_index: number): T[] {
+        if (new_index >= arr.length) {
+            let k = new_index - arr.length + 1;
+            while (k--) {
+                arr.push();
+            }
+        }
+        arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+        return arr;
     }
 }
