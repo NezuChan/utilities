@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.2...@nezuchan/constants@0.5.3) (2023-04-12)
+
+
+### Features
+
+* add volume limit ([62a43d8](https://github.com/NezuChan/utilities/commit/62a43d8ccd0d8689a60f6fbba17f82c06fbf65b3))
+
+
+
+
+
 ## [0.5.2](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.1...@nezuchan/constants@0.5.2) (2023-04-11)
 
 
