@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.4](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.3...@nezuchan/constants@0.5.4) (2023-04-12)
+
+
+### Features
+
+* add dj limit ([1e2c428](https://github.com/NezuChan/utilities/commit/1e2c4284ae159cdaa8bb99a5140b3ac6f7a6a7bc))
+
+
+
+
+
 ## [0.5.3](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.2...@nezuchan/constants@0.5.3) (2023-04-12)
 
 
