@@ -30,6 +30,12 @@ export enum VolumeLimit {
     TIER_2 = 499
 }
 
+export enum DJLimit {
+    FREE = 4,
+    TIER_1 = 8,
+    TIER_2 = 16
+}
+
 export function resolveQueueLimit(tier: number | string, user?: boolean): number {
     switch (tier) {
         case "TIER_1":
@@ -92,5 +98,18 @@ export function resolveVolumeLimit(tier: number | string): number {
             return VolumeLimit.TIER_2;
         default:
             return VolumeLimit.FREE;
+    }
+}
+
+export function resolveDJLimit(tier: number | string): number {
+    switch (tier) {
+        case "TIER_1":
+        case 1:
+            return DJLimit.TIER_1;
+        case "TIER_2":
+        case 2:
+            return DJLimit.TIER_2;
+        default:
+            return DJLimit.FREE;
     }
 }
