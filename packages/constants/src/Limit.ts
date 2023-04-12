@@ -24,6 +24,12 @@ export enum AutoPlayLimit {
     TIER_2 = 10
 }
 
+export enum VolumeLimit {
+    FREE = 100,
+    TIER_1 = 350,
+    TIER_2 = 499
+}
+
 export function resolveQueueLimit(tier: number | string, user?: boolean): number {
     switch (tier) {
         case "TIER_1":
@@ -73,5 +79,18 @@ export function resolveAutoPlayLimit(tier: number | string): number {
             return AutoPlayLimit.TIER_2;
         default:
             return AutoPlayLimit.FREE;
+    }
+}
+
+export function resolveVolumeLimit(tier: number | string): number {
+    switch (tier) {
+        case "TIER_1":
+        case 1:
+            return VolumeLimit.TIER_1;
+        case "TIER_2":
+        case 2:
+            return VolumeLimit.TIER_2;
+        default:
+            return VolumeLimit.FREE;
     }
 }
