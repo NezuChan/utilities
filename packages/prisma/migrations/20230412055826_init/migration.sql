@@ -20,20 +20,22 @@ CREATE TABLE "Guild" (
 
 -- CreateTable
 CREATE TABLE "DJRole" (
+    "id" SERIAL NOT NULL,
     "roleId" VARCHAR NOT NULL,
     "authorId" TEXT NOT NULL,
     "guildId" TEXT NOT NULL,
 
-    CONSTRAINT "DJRole_pkey" PRIMARY KEY ("roleId")
+    CONSTRAINT "DJRole_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "DJUser" (
-    "userId" VARCHAR NOT NULL,
+    "id" SERIAL NOT NULL,
+    "userId" TEXT NOT NULL,
     "authorId" TEXT NOT NULL,
     "guildId" TEXT NOT NULL,
 
-    CONSTRAINT "DJUser_pkey" PRIMARY KEY ("userId")
+    CONSTRAINT "DJUser_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable

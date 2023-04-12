@@ -28,7 +28,8 @@ model Guild {
 }
 
 model DJRole {
-  roleId              String              @id @db.VarChar
+  id                  Int                 @id @default(autoincrement())
+  roleId              String              @db.VarChar
   authorId            String
   guildId             String
 
@@ -36,10 +37,10 @@ model DJRole {
 }
 
 model DJUser {
-  userId              String              @id @db.VarChar
+  id                  Int                 @id @default(autoincrement())
+  userId              String
   authorId            String
-  guildId             String
-
+  guildId             String              
   guild               Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
