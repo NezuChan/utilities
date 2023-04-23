@@ -1,6 +1,6 @@
 export enum RedisKey {
-    SESSIONS_KEY = "gateway_sessions",
-    STATUSES_KEY = "gateway_statuses",
+    SESSIONS_KEY = "gateway_shard_session",
+    STATUSES_KEY = "gateway_shard_status",
     STARTED_KEY = "gateway_started",
     SHARDS_KEY = "gateway_shards",
 
