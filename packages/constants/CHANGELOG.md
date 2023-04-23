@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.5](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.4...@nezuchan/constants@0.5.5) (2023-04-23)
+
+
+### Features
+
+* add new constants ([3cefc07](https://github.com/NezuChan/utilities/commit/3cefc0760cbb635c7c0dfef47d5cb6e4939ec33b))
+
+
+
+
+
 ## [0.5.4](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.3...@nezuchan/constants@0.5.4) (2023-04-12)
 
 
