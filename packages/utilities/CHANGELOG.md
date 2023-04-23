@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.3.1...@nezuchan/utilities@0.4.0) (2023-04-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @sapphire/snowflake to ^3.4.2 ([3eea3f8](https://github.com/NezuChan/utilities/commit/3eea3f86eb445ef78941c9ebdac0d059c859b2cd))
+
+
+### Features
+
+* new utilities ([454ad47](https://github.com/NezuChan/utilities/commit/454ad47774d51091a3c8a64b68f230493a6c3a0f))
+
+
+
+
+
 ## [0.3.1](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.3.0...@nezuchan/utilities@0.3.1) (2023-04-11)
 
 
