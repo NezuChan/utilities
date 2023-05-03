@@ -49,6 +49,6 @@
   ],
   "dependencies": {
     "@prisma/client": "^4.13.0",
-    "prisma-redis-middleware": "^4.6.1"
+    "prisma-redis-middleware": "^4.7.0"
   }
 }
