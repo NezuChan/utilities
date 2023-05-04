@@ -1,6 +1,6 @@
-import amqplib from "amqplib";
+import amqplib, { AmqpConnectionManagerOptions, ChannelWrapper, ConnectionUrl } from "amqp-connection-manager";
 
-export async function createAmqpChannel(url: amqplib.Options.Connect | string, socketOptions?: any): Promise<amqplib.Channel> {
-    const connection = await amqplib.connect(url, socketOptions);
+export function createAmqpChannel(urls: ConnectionUrl | ConnectionUrl[] | null | undefined, options?: AmqpConnectionManagerOptions | undefined): ChannelWrapper {
+    const connection = amqplib.connect(urls, options);
     return connection.createChannel();
 }
