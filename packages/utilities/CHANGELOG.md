@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.5.0...@nezuchan/utilities@0.5.1) (2023-05-04)
+
+
+### Features
+
+* add channelOptions ([0bb576b](https://github.com/NezuChan/utilities/commit/0bb576b6b9ad3ddff6cc0936cf10ba96827e5768))
+
+
+
+
+
 # [0.5.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.4.0...@nezuchan/utilities@0.5.0) (2023-05-04)
 
 
