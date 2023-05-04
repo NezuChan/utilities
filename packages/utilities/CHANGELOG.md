@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.4.0...@nezuchan/utilities@0.5.0) (2023-05-04)
+
+
+### Features
+
+* use maintained amqplib ([500e582](https://github.com/NezuChan/utilities/commit/500e582f148360dd7f2825847e911eddd14cd23d))
+
+
+
+
+
 # [0.4.0](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.3.1...@nezuchan/utilities@0.4.0) (2023-04-23)
 
 
