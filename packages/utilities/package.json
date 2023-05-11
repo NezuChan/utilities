@@ -51,7 +51,7 @@
     "dist/**/*.d*"
   ],
   "dependencies": {
-    "@sapphire/snowflake": "^3.4.2",
+    "@sapphire/snowflake": "^3.5.0",
     "amqp-connection-manager": "^4.1.13"
   }
 }
