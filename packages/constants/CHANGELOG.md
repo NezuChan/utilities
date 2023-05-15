@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.6](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.5...@nezuchan/constants@0.5.6) (2023-05-15)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([95af9f6](https://github.com/NezuChan/utilities/commit/95af9f67efe6c10efbbf34f25af6e0b524fa10fc))
+
+
+### Features
+
+* add new exchange ([1412432](https://github.com/NezuChan/utilities/commit/14124323eb206435843dc36b88b68478c9a92a30))
+
+
+
+
+
 ## [0.5.5](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.4...@nezuchan/constants@0.5.5) (2023-04-23)
 
 
