@@ -30,7 +30,7 @@
     "amqplib": "^0.10.3",
     "eslint": "^8.40.0",
     "ioredis": "^5.3.2",
-    "rimraf": "^5.0.0",
+    "rimraf": "^5.0.1",
     "typescript": "^5.0.4"
   },
   "eslintConfig": {
