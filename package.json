@@ -28,6 +28,6 @@
     "packages/*"
   ],
   "dependencies": {
-    "turbo": "^1.10.1"
+    "turbo": "^1.10.2"
   }
 }
