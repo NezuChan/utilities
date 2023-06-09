@@ -50,6 +50,6 @@
   ],
   "dependencies": {
     "@sapphire/pieces": "^3.6.3",
-    "@sapphire/utilities": "^3.11.2"
+    "@sapphire/utilities": "^3.12.0"
   }
 }
