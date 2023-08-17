@@ -9,6 +9,7 @@ datasource db {
 
 model Guild {
   guildId              String              @id @db.VarChar
+  clientId             String
   locale               String              @default("en-US")
   DJRoles              DJRole[]
   DJUsers              DJUser[]
