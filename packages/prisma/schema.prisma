@@ -12,7 +12,7 @@ model Guild {
   locale               String              @default("en-US")
   DJRoles              DJRole[]
   DJUsers              DJUser[]
-  prefix               String?
+  prefix               String              @default("n!")
 
   defaultVolume        defaultVolume?
   clearQueueAfterEnd   clearQueueAfterEnd?
