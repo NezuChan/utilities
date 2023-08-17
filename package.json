@@ -22,7 +22,7 @@
     "@types/node": "^18.17.5",
     "lerna": "^7.1.5",
     "rimraf": "^5.0.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "workspaces": [
     "packages/*"
