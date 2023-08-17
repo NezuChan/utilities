@@ -9,10 +9,11 @@ datasource db {
 
 model Guild {
   guildId              String              @id @db.VarChar
+  clientId             String
   locale               String              @default("en-US")
   DJRoles              DJRole[]
   DJUsers              DJUser[]
-  prefix               String?
+  prefix               String              @default("n!")
 
   defaultVolume        defaultVolume?
   clearQueueAfterEnd   clearQueueAfterEnd?
@@ -22,9 +23,45 @@ model Guild {
   stayInVc             StayInVc?
   phising              Phising?
   invite               Invite?
+  cases                Case[]
+  tempVoices           TempVoice[]
 
   premiumTierType      TierType            @default(FREE)
   premiumActivatedBy   String?
+}
+
+model Instance {
+  id                  Int                 @id @default(autoincrement())
+  instanceId          String              @unique
+  guildId             String
+  userId              String
+  type                String
+  createdAt           DateTime            @default(now())
+
+  user                User                @relation(fields: [userId], references: [userId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model TempVoice {
+  id                  Int                 @id @default(autoincrement())
+  guildId             String
+  channelId           String
+  parentChannelId     String
+  ownerId             String
+  taskId              String?
+
+  guild               Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model Case {
+  id                  Int                 @id @default(autoincrement())
+  guildId             String
+  caseId              String              @db.VarChar
+  userId              String
+  reason              String
+  executorId          String
+  type                CaseType
+
+  guild               Guild               @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model DJRole {
@@ -93,12 +130,14 @@ model StayInVc {
   guild            Guild   @relation(fields: [guildId], references: [guildId], onDelete: Cascade, onUpdate: NoAction)
 }
 
-model PremiumUser {
+model User {
   id            Int         @id @default(autoincrement())
-  userId        String?     @unique
+  userId        String      @unique
   patreonUserId String?     @unique
   tier          TierType    @default(FREE)
   type          PremiumType @default(OTHER)
+
+  instances     Instance[]
 
   additionalTracksSize    Int @default(0)
   additionalPlaylistsSize Int @default(0)
@@ -142,6 +181,15 @@ model PlaylistTrack {
   playlist        Playlist @relation(fields: [playlistId], references: [playlistId], onDelete: Cascade, onUpdate: NoAction)
 }
 
+enum CaseType {
+  BAN
+  KICK
+  MUTE
+  UNBAN
+  UNMUTE
+  WARN
+}
+
 enum PhisingLevel {
   LOW
   MEDIUM
@@ -151,8 +199,10 @@ enum PhisingLevel {
 
 enum TierType {
   FREE
+  SUPPORTER
   TIER_1
   TIER_2
+  TIER_3
 }
 
 enum PremiumType {
