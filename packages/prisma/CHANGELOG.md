@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.2.0...@nezuchan/prisma@0.3.0) (2023-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([b96739e](https://github.com/NezuChan/utilities/commit/b96739e8826d7375b15c28c883ff4bfdffcaf385))
+* **deps:** update all non-major dependencies ([616cf57](https://github.com/NezuChan/utilities/commit/616cf57d6ce04e07f4adeb69932cbddbe6684bfb))
+* **deps:** update all non-major dependencies ([103d827](https://github.com/NezuChan/utilities/commit/103d8278941a1c3b8581134c54a0c5c99b931627))
+* **deps:** update all non-major dependencies ([95af9f6](https://github.com/NezuChan/utilities/commit/95af9f67efe6c10efbbf34f25af6e0b524fa10fc))
+* **deps:** update dependency @prisma/client to ^4.13.0 ([b8ab67e](https://github.com/NezuChan/utilities/commit/b8ab67ee91824585c78241153d470b9b87afb89f))
+* **deps:** update dependency @prisma/client to ^4.16.1 ([623786f](https://github.com/NezuChan/utilities/commit/623786f4068302eec6a5c426556e101b270f6873))
+* **deps:** update dependency @prisma/client to ^4.16.2 ([e9328c7](https://github.com/NezuChan/utilities/commit/e9328c7c4bfc8a22e3d22317d9983d8674ba40d8))
+* **deps:** update dependency prisma-redis-middleware to ^4.7.0 ([c7c0d95](https://github.com/NezuChan/utilities/commit/c7c0d95b7b164ad74e405b07b115f086036a6b9c))
+
+
+### Features
+
+* new model schema ([#128](https://github.com/NezuChan/utilities/issues/128)) ([7691b3d](https://github.com/NezuChan/utilities/commit/7691b3d5d66feda4ca7665ae2fbcfdbc355282d0))
+
+
+
+
+
 # [0.2.0](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.1.2...@nezuchan/prisma@0.2.0) (2023-04-12)
 
 
