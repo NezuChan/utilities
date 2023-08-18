@@ -75,7 +75,7 @@ model DJRole {
   clientId            String
 
   guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
-  @@id([guildId, clientId])
+  @@id([guildId, clientId, roleId])
 }
 
 model DJUser {  
@@ -85,7 +85,7 @@ model DJUser {
   clientId            String
          
   guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
-  @@id([guildId, clientId])
+  @@id([guildId, clientId, userId])
 }
 
 model defaultVolume {
