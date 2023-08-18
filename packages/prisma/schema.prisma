@@ -43,8 +43,7 @@ model Instance {
   user                User                @relation(fields: [userId], references: [userId], onDelete: Cascade, onUpdate: NoAction)
 }
 
-model TempVoice {
-  id                  Int                 
+model TempVoice {    
   guildId             String
   clientId            String
   channelId           String
@@ -56,8 +55,7 @@ model TempVoice {
   @@id([guildId, clientId])
 }
 
-model Case {
-  id                  Int                 
+model Case {      
   guildId             String
   clientId            String
   caseId              String              @db.VarChar
@@ -70,8 +68,7 @@ model Case {
   @@id([guildId, clientId])
 }
 
-model DJRole {
-  id                  Int                 
+model DJRole {           
   roleId              String              @db.VarChar
   authorId            String
   guildId             String
@@ -81,8 +78,7 @@ model DJRole {
   @@id([guildId, clientId])
 }
 
-model DJUser {
-  id                  Int                 
+model DJUser {  
   userId              String
   authorId            String
   guildId             String     
