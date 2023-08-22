@@ -33,8 +33,7 @@ model Guild {
 }
 
 model Instance {
-  id                  Int                 @id @default(autoincrement())
-  instanceId          String              @unique
+  instanceId          String              @id
   guildId             String
   userId              String
   type                String
@@ -172,9 +171,9 @@ model Phising {
 }
 
 model User {
-  id            Int         
-  userId        String      @unique
-  patreonUserId String?     @unique
+  userId        String      @id
+  email         String?
+  patreonUserId String?
   tier          TierType    @default(FREE)
   type          PremiumType @default(OTHER)
 
