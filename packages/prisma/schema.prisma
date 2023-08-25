@@ -8,159 +8,222 @@ datasource db {
 }
 
 model Guild {
-  guildId              String
-  clientId             String
-  locale               String              @default("en-US")
-  DJRoles              DJRole[]
-  DJUsers              DJUser[]
-  prefix               String              @default("n!")
+  id       String   @default(cuid())
+  guildId  String
+  clientId String
+  locale   String   @default("en-US")
+  DJRoles  DJRole[]
+  DJUsers  DJUser[]
+  prefix   String   @default("n!")
 
-  defaultVolume        defaultVolume?
-  clearQueueAfterEnd   clearQueueAfterEnd?
-  DJMode               DJMode?
-  autoPlay             autoPlay?
-  announceTrackStart   announceTrackStart?
-  stayInVc             StayInVc?
-  phising              Phising?
-  invite               Invite?
-  cases                Case[]
-  tempVoices           TempVoice[]
+  defaultVolume      defaultVolume?
+  clearQueueAfterEnd clearQueueAfterEnd?
+  DJMode             DJMode?
+  autoPlay           autoPlay?
+  announceTrackStart announceTrackStart?
+  stayInVc           StayInVc?
+  phising            Phising?
+  invite             Invite?
+  cases              Case[]
+  tempVoices         TempVoice[]
 
-  premiumTierType      TierType            @default(FREE)
-  premiumActivatedBy   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  premiumTierType    TierType @default(FREE)
+  premiumActivatedBy String?
 
   @@id([guildId, clientId])
 }
 
-model TempVoice {    
-  guildId             String
-  clientId            String
-  channelId           String
-  parentChannelId     String
-  ownerId             String
-  taskId              String?
+model TempVoice {
+  id        String  @default(cuid())
+  guildId   String
+  clientId  String
+  channelId String
+  parentId  String
+  ownerId   String
+  taskId    String?
 
-  guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
-model Case {      
-  guildId             String
-  clientId            String
-  caseId              String              @db.VarChar
-  userId              String
-  reason              String
-  executorId          String
-  type                CaseType
+model Case {
+  id         String   @default(cuid())
+  guildId    String
+  clientId   String
+  caseId     String   @db.VarChar
+  userId     String
+  reason     String
+  executorId String
+  type       CaseType
 
-  guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
-model DJRole {           
-  roleId              String              @db.VarChar
-  authorId            String
-  guildId             String
-  clientId            String
+model DJRole {
+  id       String @default(cuid())
+  roleId   String @db.VarChar
+  authorId String
+  guildId  String
+  clientId String
 
-  guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId, roleId])
 }
 
-model DJUser {  
-  userId              String
-  authorId            String
-  guildId             String     
-  clientId            String
-         
-  guild               Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+model DJUser {
+  id       String @default(cuid())
+  userId   String
+  authorId String
+  guildId  String
+  clientId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId, userId])
 }
 
 model defaultVolume {
-  guildId              String
-  clientId             String
-  activatedBy          String
-  defaultVolume        Int                 @default(100)
+  id            String @default(cuid())
+  guildId       String
+  clientId      String
+  activatedBy   String
+  defaultVolume Int    @default(100)
 
-  guild                Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model clearQueueAfterEnd {
-  guildId              String
-  clientId             String
-  activatedBy          String
-  enabled              Boolean             @default(true)
-  
-  guild                Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  id          String  @default(cuid())
+  guildId     String
+  clientId    String
+  activatedBy String
+  enabled     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model DJMode {
-  guildId              String
-  clientId             String
-  activatedBy          String
-  enabled              Boolean             @default(false)
-  
-  guild                Guild               @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  id          String  @default(cuid())
+  guildId     String
+  clientId    String
+  activatedBy String
+  enabled     Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model autoPlay {
-  guildId          String
-  clientId         String
-  activatedBy      String
-  enabled          Boolean @default(false)
-  
-  guild            Guild   @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  id          String  @default(cuid())
+  guildId     String
+  clientId    String
+  activatedBy String
+  enabled     Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model announceTrackStart {
-  guildId          String
-  clientId         String
-  activatedBy      String
-  enabled          Boolean @default(true)
-  channel          String?
-  
-  guild            Guild   @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  id          String  @default(cuid())
+  guildId     String
+  clientId    String
+  activatedBy String
+  enabled     Boolean @default(true)
+  channel     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model StayInVc {
-  guildId          String
-  clientId         String
-  activatedBy      String
-  enabled          Boolean @default(false)
-  
-  guild            Guild   @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  id          String  @default(cuid())
+  guildId     String
+  clientId    String
+  activatedBy String
+  enabled     Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model Invite {
-  id          Int           
+  id          String  @default(cuid())
   guildId     String
   clientId    String
-  enabled     Boolean       @default(false)
-  adminBypass Boolean       @default(false)
+  enabled     Boolean @default(false)
+  adminBypass Boolean @default(false)
 
-  guild       Guild         @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model Phising {
-  id        Int           
-  guildId   String        @unique
-  clientId  String
-  enabled   Boolean       @default(false)
-  level     PhisingLevel  @default(MEDIUM)
+  id       String       @default(cuid())
+  guildId  String
+  clientId String
+  enabled  Boolean      @default(false)
+  level    PhisingLevel @default(MEDIUM)
 
-  guild     Guild         @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guild Guild @relation(fields: [guildId, clientId], references: [guildId, clientId], onDelete: Cascade, onUpdate: NoAction)
+
   @@id([guildId, clientId])
 }
 
 model User {
+  id            String      @default(cuid())
   userId        String      @id
   email         String?
   patreonUserId String?
@@ -171,24 +234,41 @@ model User {
   additionalPlaylistsSize Int @default(0)
   tier1Tickets            Int @default(0)
   tier2Tickets            Int @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Playlist {
-  playlistId           String @id @db.VarChar
-  userId               String
-  playlistName         String
-  trackLimit           Int    @default(20)
+  id           String             @default(cuid())
+  playlistId   String             @id @db.VarChar
+  userId       String
+  playlistName String
+  trackLimit   Int                @default(20)
+  visibility   PlaylistVisibility @default(PUBLIC)
 
-  tracks               PlaylistTrack[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  tracks PlaylistTrack[]
 }
 
 model PlaylistTrack {
-  trackId         String @id @db.VarChar
-  userId          String
-  playlistId      String
-  track           Json
+  id         String @default(cuid())
+  trackId    String @id @db.VarChar
+  userId     String
+  playlistId String
+  track      Json
 
-  playlist        Playlist @relation(fields: [playlistId], references: [playlistId], onDelete: Cascade, onUpdate: NoAction)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  playlist Playlist @relation(fields: [playlistId], references: [playlistId], onDelete: Cascade, onUpdate: NoAction)
+}
+
+enum PlaylistVisibility {
+  PUBLIC
+  PRIVATE
 }
 
 enum CaseType {
