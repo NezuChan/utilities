@@ -230,8 +230,6 @@ model User {
   tier          TierType    @default(FREE)
   type          PremiumType @default(OTHER)
 
-  additionalTracksSize    Int @default(0)
-  additionalPlaylistsSize Int @default(0)
   tier1Tickets            Int @default(0)
   tier2Tickets            Int @default(0)
 
