@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.5.0...@nezuchan/prisma@0.6.0) (2023-08-25)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([850efeb](https://github.com/NezuChan/utilities/commit/850efeb4925c8ff7a80c76d81707312c05a252e0))
+
+
+### Features
+
+* update prisma schema ([389158d](https://github.com/NezuChan/utilities/commit/389158d06f3c77a4a495e8c6453de6e26cbfb81d))
+
+
+
+
+
 # [0.5.0](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.4.2...@nezuchan/prisma@0.5.0) (2023-08-22)
 
 **Note:** Version bump only for package @nezuchan/prisma
