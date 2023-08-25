@@ -32,16 +32,6 @@ model Guild {
   @@id([guildId, clientId])
 }
 
-model Instance {
-  instanceId          String              @id
-  guildId             String
-  userId              String
-  type                String
-  createdAt           DateTime            @default(now())
-
-  user                User                @relation(fields: [userId], references: [userId], onDelete: Cascade, onUpdate: NoAction)
-}
-
 model TempVoice {    
   guildId             String
   clientId            String
@@ -176,8 +166,6 @@ model User {
   patreonUserId String?
   tier          TierType    @default(FREE)
   type          PremiumType @default(OTHER)
-
-  instances     Instance[]
 
   additionalTracksSize    Int @default(0)
   additionalPlaylistsSize Int @default(0)
