@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/NezuChan/library/compare/@nezuchan/prisma@0.6.0...@nezuchan/prisma@0.7.0) (2023-08-30)
+
+
+### Features
+
+* add custom instances database ([a4631fc](https://github.com/NezuChan/library/commit/a4631fc0e8113484d52a42b2b50776035dfc0bcc))
+
+
+
+
+
 # [0.6.0](https://github.com/NezuChan/utilities/compare/@nezuchan/prisma@0.5.0...@nezuchan/prisma@0.6.0) (2023-08-25)
 
 
