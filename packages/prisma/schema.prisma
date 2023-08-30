@@ -222,6 +222,21 @@ model Phising {
   @@id([guildId, clientId])
 }
 
+model Instance {
+  id     String @id @default(cuid())
+  userId String
+  botId  String
+
+  memoryLimit String @default("128")
+  type        String
+  node        String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [id], references: [userId], onDelete: Cascade, onUpdate: NoAction)
+}
+
 model User {
   id            String      @default(cuid())
   userId        String      @id
@@ -230,8 +245,10 @@ model User {
   tier          TierType    @default(FREE)
   type          PremiumType @default(OTHER)
 
-  tier1Tickets            Int @default(0)
-  tier2Tickets            Int @default(0)
+  tier1Tickets Int @default(0)
+  tier2Tickets Int @default(0)
+
+  instances Instance[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
