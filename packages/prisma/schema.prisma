@@ -223,9 +223,10 @@ model Phising {
 }
 
 model Instance {
-  id     String @id @default(cuid())
-  userId String
-  botId  String
+  id          String @id @default(cuid())
+  userId      String
+  botId       String
+  containerId String
 
   memoryLimit String @default("128")
   type        String
