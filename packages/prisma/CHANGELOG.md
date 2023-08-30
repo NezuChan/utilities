@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/NezuChan/library/compare/@nezuchan/prisma@0.7.0...@nezuchan/prisma@0.7.1) (2023-08-30)
+
+
+### Bug Fixes
+
+* add missing containerId ([8c64403](https://github.com/NezuChan/library/commit/8c644031455fb10ac2641c67d4b27fdd91285a63))
+
+
+
+
+
 # [0.7.0](https://github.com/NezuChan/library/compare/@nezuchan/prisma@0.6.0...@nezuchan/prisma@0.7.0) (2023-08-30)
 
 
