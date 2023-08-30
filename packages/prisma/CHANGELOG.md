@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://github.com/NezuChan/library/compare/@nezuchan/prisma@0.7.1...@nezuchan/prisma@0.7.2) (2023-08-30)
+
+
+### Features
+
+* add instance node ([3d255bc](https://github.com/NezuChan/library/commit/3d255bca65e1ed14a9379d67ad984cc2480cebc7))
+
+
+
+
+
 ## [0.7.1](https://github.com/NezuChan/library/compare/@nezuchan/prisma@0.7.0...@nezuchan/prisma@0.7.1) (2023-08-30)
 
 
