@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.8](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.5.7...@nezuchan/constants@0.5.8) (2023-09-28)
+
+
+### Features
+
+* add voice_server key ([323bdfa](https://github.com/NezuChan/library/commit/323bdfa941eb7589f65c70093712dba4b8da6698))
+
+
+
+
+
 ## [0.5.7](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.5.6...@nezuchan/constants@0.5.7) (2023-09-28)
 
 
