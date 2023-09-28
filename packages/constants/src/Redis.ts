@@ -13,6 +13,7 @@ export enum RedisKey {
     MEMBER_KEY = "member",
     PRESENCE_KEY = "presence",
     VOICE_KEY = "voice",
+    VOICE_SERVER_KEY = "voice_server",
     USER_KEY = "user",
 
     KEYS_SUFFIX = "_keys",
