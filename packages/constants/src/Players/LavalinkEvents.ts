@@ -1,4 +1,5 @@
 export enum LavalinkEvents {
     LavalinkEvent = "lavalinkEvent",
-    LavalinkPlayerUpdate = "lavalinkPlayerUpdate"
+    LavalinkPlayerUpdate = "lavalinkPlayerUpdate",
+    LavalinkNextTrack = "lavalinkNextTrack"
 }
