@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.7](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.5.6...@nezuchan/constants@0.5.7) (2023-09-28)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([f444915](https://github.com/NezuChan/library/commit/f4449151149f5f0276017b1ad487223a32aebb52))
+* **deps:** update all non-major dependencies ([850efeb](https://github.com/NezuChan/library/commit/850efeb4925c8ff7a80c76d81707312c05a252e0))
+* **deps:** update all non-major dependencies ([103d827](https://github.com/NezuChan/library/commit/103d8278941a1c3b8581134c54a0c5c99b931627))
+
+
+### Features
+
+* add new lavalink events ([e41b4b8](https://github.com/NezuChan/library/commit/e41b4b82287b1bd539fdd3aac491656e26be640b))
+
+
+
+
+
 ## [0.5.6](https://github.com/NezuChan/utilities/compare/@nezuchan/constants@0.5.5...@nezuchan/constants@0.5.6) (2023-05-15)
 
 
