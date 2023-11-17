@@ -54,7 +54,7 @@
     "dist/**/*.d*"
   ],
   "dependencies": {
-    "@sapphire/pieces": "^3.9.0",
+    "@sapphire/pieces": "^3.10.0",
     "@sapphire/utilities": "^3.13.0"
   }
 }
