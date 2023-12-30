@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/NezuChan/library/compare/@nezuchan/utilities@0.5.1...@nezuchan/utilities@0.6.0) (2023-12-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([f444915](https://github.com/NezuChan/library/commit/f4449151149f5f0276017b1ad487223a32aebb52))
+* **deps:** update all non-major dependencies ([850efeb](https://github.com/NezuChan/library/commit/850efeb4925c8ff7a80c76d81707312c05a252e0))
+* **deps:** update all non-major dependencies ([103d827](https://github.com/NezuChan/library/commit/103d8278941a1c3b8581134c54a0c5c99b931627))
+* **deps:** update all non-major dependencies ([95af9f6](https://github.com/NezuChan/library/commit/95af9f67efe6c10efbbf34f25af6e0b524fa10fc))
+* **deps:** update all non-major dependencies ([#158](https://github.com/NezuChan/library/issues/158)) ([08729ae](https://github.com/NezuChan/library/commit/08729ae3e6080c951d430a1a4265f34dae095788))
+* **deps:** update dependency @sapphire/snowflake to ^3.5.0 ([f9ff257](https://github.com/NezuChan/library/commit/f9ff2574bf3d9e594f7fe6cdd2110c3dd5cb0c4c))
+* **deps:** update dependency @sapphire/snowflake to ^3.5.1 ([7b5f037](https://github.com/NezuChan/library/commit/7b5f03759d53c0886e4bb9db451de544f40e9d93))
+* **deps:** update dependency amqp-connection-manager to ^4.1.14 ([7d53e5b](https://github.com/NezuChan/library/commit/7d53e5bbaffbf2c9594cf5508d244cea10783a5c))
+* **deps:** update sapphire dependencies ([0767fd9](https://github.com/NezuChan/library/commit/0767fd9971bdc2327c1cb8075ca6cffd66e3f46c))
+
+
+
+
+
 ## [0.5.1](https://github.com/NezuChan/utilities/compare/@nezuchan/utilities@0.5.0...@nezuchan/utilities@0.5.1) (2023-05-04)
 
 
