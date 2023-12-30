@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.5.8...@nezuchan/constants@0.6.0) (2023-12-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#158](https://github.com/NezuChan/library/issues/158)) ([08729ae](https://github.com/NezuChan/library/commit/08729ae3e6080c951d430a1a4265f34dae095788))
+
+
+
+
+
 ## [0.5.8](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.5.7...@nezuchan/constants@0.5.8) (2023-09-28)
 
 
