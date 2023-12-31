@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/NezuChan/library/compare/@nezuchan/utilities@0.6.1...@nezuchan/utilities@0.6.2) (2023-12-31)
+
+
+### Bug Fixes
+
+* **redisScan:** fix redis cluster ([b9dc001](https://github.com/NezuChan/library/commit/b9dc0016dd4982b07a84df49b8740fe98e200b55))
+
+
+
+
+
 ## [0.6.1](https://github.com/NezuChan/library/compare/@nezuchan/utilities@0.6.0...@nezuchan/utilities@0.6.1) (2023-12-31)
 
 
