@@ -58,8 +58,8 @@ importers:
   packages/decorators:
     dependencies:
       '@sapphire/pieces':
-        specifier: ^3.10.0
-        version: 3.10.0
+        specifier: ^4.2.0
+        version: 4.2.0
       '@sapphire/utilities':
         specifier: ^3.15.1
         version: 3.15.1
@@ -780,8 +780,8 @@ packages:
     dependencies:
       '@prisma/debug': 5.7.1
 
-  /@sapphire/pieces@3.10.0:
-    resolution: {integrity: sha512-iBaux50dA+VYjtBqmaceWcskdmw7ua51ojEPkyaSJyg2t9ln/Wc9NqYoQheRCWltZeDTERCUBIYYMqDuCs1Okw==}
+  /@sapphire/pieces@4.2.0:
+    resolution: {integrity: sha512-Bh462mJbPv0VbrPhaNpFYD8Bdg9xnKPZEF6h8xA/lMTNnEbhM8e967klBNd8Gw+iDO0Bve60Pg2t4a1xyxdLxA==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
     dependencies:
       '@discordjs/collection': 1.5.3
