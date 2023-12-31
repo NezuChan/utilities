@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { Redis, Cluster, NatMap, NodeRole, ClusterNode } from "ioredis";
 
-export function createRedis({ redisPassword, redisUsername, redisHost, redisPort, redisDb, redisClusters, redisClusterScaleReads, redisNatMap }: CreateRedisOptions): Cluster | Redis {
+export function createRedis({ redisPassword, redisUsername, redisHost, redisPort, redisDb, redisClusters, redisClusterScaleReads, redisNatMap, enableAutoPipelining = true }: CreateRedisOptions): Cluster | Redis {
     return redisClusters?.length
         ? new Cluster(
             redisClusters,
@@ -12,7 +12,8 @@ export function createRedis({ redisPassword, redisUsername, redisHost, redisPort
                     username: redisUsername,
                     db: redisDb
                 },
-                natMap: redisNatMap
+                natMap: redisNatMap,
+                enableAutoPipelining
             }
         )
         : new Redis({
@@ -21,7 +22,8 @@ export function createRedis({ redisPassword, redisUsername, redisHost, redisPort
             host: redisHost,
             port: redisPort,
             db: redisDb,
-            natMap: redisNatMap
+            natMap: redisNatMap,
+            enableAutoPipelining
         });
 }
 
@@ -34,4 +36,5 @@ export interface CreateRedisOptions {
     redisClusters?: ClusterNode[];
     redisClusterScaleReads?: NodeRole;
     redisNatMap?: NatMap;
+    enableAutoPipelining: boolean;
 }
