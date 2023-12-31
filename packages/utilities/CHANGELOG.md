@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/NezuChan/library/compare/@nezuchan/utilities@0.6.0...@nezuchan/utilities@0.6.1) (2023-12-31)
+
+
+### Features
+
+* **createRedis:** enable auto pipelining ([#191](https://github.com/NezuChan/library/issues/191)) ([e00c1f2](https://github.com/NezuChan/library/commit/e00c1f2c2515381f190cded5008089b4c12c06ad))
+
+
+
+
+
 # [0.6.0](https://github.com/NezuChan/library/compare/@nezuchan/utilities@0.5.1...@nezuchan/utilities@0.6.0) (2023-12-30)
 
 
