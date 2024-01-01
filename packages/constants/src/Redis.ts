@@ -16,5 +16,7 @@ export enum RedisKey {
     VOICE_SERVER_KEY = "voice_server",
     USER_KEY = "user",
 
+    COUNT = "count",
+
     EXPIRY_KEYS = "expiry_keys"
 }
