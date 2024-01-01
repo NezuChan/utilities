@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.7.0...@nezuchan/constants@0.8.0) (2024-01-01)
+
+
+### Features
+
+* **RedisKey:** add list key ([55bdbcd](https://github.com/NezuChan/library/commit/55bdbcdbe77860833b9dffd15a97844ade777ed7))
+
+
+
+
+
 # [0.7.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.6.0...@nezuchan/constants@0.7.0) (2024-01-01)
 
 
