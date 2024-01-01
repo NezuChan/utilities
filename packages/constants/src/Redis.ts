@@ -17,6 +17,8 @@ export enum RedisKey {
     USER_KEY = "user",
 
     COUNT = "count",
+    // used by redis sets (for storing voice states keys)
+    LIST = "list",
 
     EXPIRY_KEYS = "expiry_keys"
 }
