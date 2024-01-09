@@ -28,11 +28,11 @@
   "author": "KagChi",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@types/node": "^20.10.7",
+    "@types/node": "^20.10.8",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.56.0",
-    "prisma": "^5.7.1",
+    "prisma": "^5.8.0",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   },
@@ -54,6 +54,6 @@
     "schema.prisma"
   ],
   "dependencies": {
-    "@prisma/client": "^5.7.1"
+    "@prisma/client": "^5.8.0"
   }
 }
