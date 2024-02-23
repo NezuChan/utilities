@@ -19,7 +19,7 @@ export enum RabbitMQ {
 export enum GatewayExchangeRoutes {
     DISPATCH = "dispatch",
     RECEIVE = "receive",
-    CACHE = "cache",
+    REQUEST = "request",
     SEND = "send"
 }
 
