@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.9.0...@nezuchan/constants@0.9.1) (2024-02-23)
+
+
+### Bug Fixes
+
+* **RabbitMQ:** it's request for RPC, not cache ([2cc5de8](https://github.com/NezuChan/library/commit/2cc5de8b5a0d8b0fc6f5f066df189f779065869e))
+
+
+
+
+
 # [0.9.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.8.0...@nezuchan/constants@0.9.0) (2024-02-23)
 
 
