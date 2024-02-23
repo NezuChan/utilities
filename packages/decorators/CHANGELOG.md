@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/NezuChan/library/compare/@nezuchan/decorators@0.2.0...@nezuchan/decorators@0.3.0) (2024-02-23)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([447bb6f](https://github.com/NezuChan/library/commit/447bb6fb431624f2681db537d149a2ddf6e6959c))
+* **deps:** update all non-major dependencies ([0e5e176](https://github.com/NezuChan/library/commit/0e5e1764bac492b3c2a8d816b485c65ab5599b3c))
+* **deps:** update all non-major dependencies ([#210](https://github.com/NezuChan/library/issues/210)) ([29257dd](https://github.com/NezuChan/library/commit/29257ddc7c94beb559e7866627fe118ddc31f173))
+* **deps:** update dependency @sapphire/pieces to ^4.2.1 ([678c59d](https://github.com/NezuChan/library/commit/678c59d6bc81cfd718e100347239b2b84e0c0788))
+* **deps:** update dependency @sapphire/utilities to ^3.15.2 ([f927865](https://github.com/NezuChan/library/commit/f9278650aac1de2d4906fa44a33b4048f884d2b8))
+* **deps:** update sapphire dependencies ([8044676](https://github.com/NezuChan/library/commit/80446765acdfc77d71fcf00aeab72c2c211bd846))
+
+
+
+
+
 # [0.2.0](https://github.com/NezuChan/library/compare/@nezuchan/decorators@0.1.0...@nezuchan/decorators@0.2.0) (2023-12-31)
 
 

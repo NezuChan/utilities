@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.8.0...@nezuchan/constants@0.9.0) (2024-02-23)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([447bb6f](https://github.com/NezuChan/library/commit/447bb6fb431624f2681db537d149a2ddf6e6959c))
+* **deps:** update all non-major dependencies ([0e5e176](https://github.com/NezuChan/library/commit/0e5e1764bac492b3c2a8d816b485c65ab5599b3c))
+* **deps:** update all non-major dependencies ([#210](https://github.com/NezuChan/library/issues/210)) ([29257dd](https://github.com/NezuChan/library/commit/29257ddc7c94beb559e7866627fe118ddc31f173))
+
+
+
+
+
 # [0.8.0](https://github.com/NezuChan/library/compare/@nezuchan/constants@0.7.0...@nezuchan/constants@0.8.0) (2024-01-01)
 
 
