@@ -61,8 +61,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2
       '@sapphire/utilities':
-        specifier: ^3.15.3
-        version: 3.15.3
+        specifier: ^3.16.0
+        version: 3.16.0
     devDependencies:
       '@types/node':
         specifier: ^20.12.11
@@ -117,8 +117,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2
       '@sapphire/utilities':
-        specifier: ^3.15.3
-        version: 3.15.3
+        specifier: ^3.16.0
+        version: 3.16.0
       drizzle-orm:
         specifier: ^0.30.10
         version: 0.30.10
@@ -764,8 +764,8 @@ packages:
     resolution: {integrity: sha512-jjmJywLAFoWeBi1W7994zZyiNWPIiqRRNAmSERxyg93xRGzNYvGjlZ0gR6x0F4gPRi2+0O6S71kOZYyr3cxaIQ==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
-  '@sapphire/utilities@3.15.3':
-    resolution: {integrity: sha512-K5dFGOB5XvblXFN+Av+Tch/dVBAifmxtZ9/2mFo8VqzbiaFJIRUuoPAoNsp8pWYaU423yV8bfD8WsCSNd9w1YQ==}
+  '@sapphire/utilities@3.16.0':
+    resolution: {integrity: sha512-KD3U0WzshO9ZkX2TaZJfXbc7oupWcKLDU8+8wMGWpArolVXdDrmtTXKN1rz8BiaAKE73KYjdPcBrtna4+bPD/Q==}
     engines: {node: '>=v14.0.0'}
 
   '@sigstore/bundle@1.1.0':
@@ -2950,10 +2950,12 @@ packages:
   read-package-json@6.0.4:
     resolution: {integrity: sha512-AEtWXYfopBj2z5N5PbkAOeNHRPUg5q+Nen7QLxV8M2zJq1ym6/lCz3fYNTCXe19puu2d06jfHhrP7v/S2PtMMw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-package-json@7.0.0:
     resolution: {integrity: sha512-uL4Z10OKV4p6vbdvIXB+OzhInYtIozl/VxUBPgNkBuUi2DeRonnuspmaVAMcrkmfjKGNmRndyQAbE7/AmzGwFg==}
     engines: {node: ^16.14.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-pkg-up@3.0.0:
     resolution: {integrity: sha512-YFzFrVvpC6frF1sz8psoHDBGF7fLPc+llq/8NB43oagqWkx8ar5zYtsTORtOjw9W2RHLpWP+zTWwBvf1bCmcSw==}
@@ -4134,12 +4136,12 @@ snapshots:
   '@sapphire/pieces@4.2.2':
     dependencies:
       '@discordjs/collection': 1.5.3
-      '@sapphire/utilities': 3.15.3
+      '@sapphire/utilities': 3.16.0
       tslib: 2.6.2
 
   '@sapphire/snowflake@3.5.3': {}
 
-  '@sapphire/utilities@3.15.3': {}
+  '@sapphire/utilities@3.16.0': {}
 
   '@sigstore/bundle@1.1.0':
     dependencies:
