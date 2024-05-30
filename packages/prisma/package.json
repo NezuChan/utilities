@@ -28,12 +28,12 @@
   "author": "KagChi",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@types/node": "^20.12.11",
+    "@types/node": "^20.12.13",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",
-    "prisma": "^5.13.0",
-    "rimraf": "^5.0.5",
+    "prisma": "^5.14.0",
+    "rimraf": "^5.0.7",
     "typescript": "^5.4.5"
   },
   "eslintConfig": {
@@ -54,6 +54,6 @@
     "schema.prisma"
   ],
   "dependencies": {
-    "@prisma/client": "^5.13.0"
+    "@prisma/client": "^5.14.0"
   }
 }
