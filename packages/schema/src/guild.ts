@@ -1,6 +1,7 @@
 import { boolean, integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 import { TierType, User } from "./user.js";
 import { createdAt, updatedAt } from "./index.js";
+import { sql } from "drizzle-orm";
 
 export const Guild = pgTable("guild", {
     id: uuid("id").primaryKey()
@@ -76,4 +77,27 @@ export const StayInVc = pgTable("stay_in_vc", {
 
     createdAt: createdAt(),
     updatedAt: updatedAt()
+});
+
+export const DJ = pgTable("dj", {
+    id: uuid("id").primaryKey()
+        .defaultRandom(),
+
+    guildId: uuid("guild_id").references(() => Guild.id),
+    clientId: text("client_id"),
+
+    activatedBy: text("activated_by"),
+    state: boolean("state").default(false),
+
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+
+    users: text("users")
+        .array()
+        .notNull()
+        .default(sql`'{}'::text[]`),
+    roles: text("roles")
+        .array()
+        .notNull()
+        .default(sql`'{}'::text[]`)
 });
