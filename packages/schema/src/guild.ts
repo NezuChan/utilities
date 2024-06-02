@@ -65,6 +65,21 @@ export const Crossfade = pgTable("crossfade", {
     updatedAt: updatedAt()
 });
 
+export const Gapless = pgTable("gapless", {
+    id: uuid("id").primaryKey()
+        .defaultRandom(),
+
+    guildId: uuid("guild_id").references(() => Guild.id),
+    clientId: text("client_id"),
+
+    activatedBy: text("activated_by"),
+    state: boolean("state").default(false),
+
+    createdAt: createdAt(),
+    updatedAt: updatedAt()
+});
+
+
 export const StayInVc = pgTable("stay_in_vc", {
     id: uuid("id").primaryKey()
         .defaultRandom(),
