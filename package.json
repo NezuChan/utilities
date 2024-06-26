@@ -19,7 +19,7 @@
     "@hazmi35/eslint-config": "^11.0.0",
     "@swc/cli": "^0.3.14",
     "@swc/core": "^1.6.5",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "lerna": "^8.1.5",
     "rimraf": "^5.0.7",
     "typescript": "^5.5.2"
