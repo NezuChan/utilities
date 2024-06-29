@@ -31,7 +31,7 @@
     "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "drizzle-kit": "^0.22.7",
+    "drizzle-kit": "^0.22.8",
     "eslint": "^8.57.0",
     "lavalink-api-types": "^2.0.2",
     "rimraf": "^5.0.7",
