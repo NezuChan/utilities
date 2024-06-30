@@ -58,8 +58,8 @@ importers:
   packages/decorators:
     dependencies:
       '@sapphire/pieces':
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.0
+        version: 4.3.0
       '@sapphire/utilities':
         specifier: ^3.16.2
         version: 3.16.2
@@ -114,8 +114,8 @@ importers:
   packages/schema:
     dependencies:
       '@sapphire/pieces':
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.0
+        version: 4.3.0
       '@sapphire/utilities':
         specifier: ^3.16.2
         version: 3.16.2
@@ -799,8 +799,8 @@ packages:
   '@prisma/get-platform@5.16.1':
     resolution: {integrity: sha512-R4IKnWnMkR2nUAbU5gjrPehdQYUUd7RENFD2/D+xXTNhcqczp0N+WEGQ3ViyI3+6mtVcjjNIMdnUTNyu3GxIgA==}
 
-  '@sapphire/pieces@4.2.2':
-    resolution: {integrity: sha512-DvAC+zTgm5o41D6iX+jBjMp+rRmoHPKNYnav6v6vQLTxBJb+iFMmup9ZREiuXdrh1ejrmVRZojnnI59xQgezwQ==}
+  '@sapphire/pieces@4.3.0':
+    resolution: {integrity: sha512-cjxMRN9Lvgd2c/RLKj4I1qWvj9lRDQIHYplMlmqgiL+tFetv8j5Y7D/xNXcX0xVenU93O1L6plYf7DmWMt/M4w==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
   '@sapphire/snowflake@3.5.3':
@@ -3286,6 +3286,9 @@ packages:
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+
   tuf-js@2.2.1:
     resolution: {integrity: sha512-GwIJau9XaA8nLVbUXsN3IlFi7WmQ48gBUrl3FTkkL/XLu/POhBzfmX9hd33FNMX1qAsfl6ozO1iMmW9NC8YniA==}
     engines: {node: ^16.14.0 || >=18.0.0}
@@ -4146,11 +4149,11 @@ snapshots:
     dependencies:
       '@prisma/debug': 5.16.1
 
-  '@sapphire/pieces@4.2.2':
+  '@sapphire/pieces@4.3.0':
     dependencies:
       '@discordjs/collection': 1.5.3
       '@sapphire/utilities': 3.16.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@sapphire/snowflake@3.5.3': {}
 
@@ -6802,6 +6805,8 @@ snapshots:
       strip-bom: 3.0.0
 
   tslib@2.6.2: {}
+
+  tslib@2.6.3: {}
 
   tuf-js@2.2.1:
     dependencies:
