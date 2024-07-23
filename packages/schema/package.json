@@ -34,7 +34,7 @@
     "drizzle-kit": "^0.22.7",
     "eslint": "^8.57.0",
     "lavalink-api-types": "^2.0.2",
-    "rimraf": "^5.0.7",
+    "rimraf": "^6.0.1",
     "typescript": "^5.5.4"
   },
   "eslintConfig": {
