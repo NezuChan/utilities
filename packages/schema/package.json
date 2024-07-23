@@ -57,7 +57,7 @@
   ],
   "dependencies": {
     "@sapphire/pieces": "^4.3.1",
-    "@sapphire/utilities": "^3.16.2",
+    "@sapphire/utilities": "^3.17.0",
     "drizzle-orm": "^0.31.2"
   }
 }
