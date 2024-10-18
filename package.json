@@ -16,7 +16,7 @@
   "author": "KagChi",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@hazmi35/eslint-config": "^11.0.0",
+    "@hazmi35/eslint-config": "^15.1.0",
     "@swc/cli": "^0.3.14",
     "@swc/core": "^1.6.5",
     "@types/node": "^20.14.9",
