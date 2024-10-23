@@ -28,13 +28,13 @@
   "author": "KagChi",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.17.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "drizzle-kit": "^0.22.7",
+    "drizzle-kit": "^0.26.2",
     "eslint": "^8.57.0",
     "lavalink-api-types": "^2.0.2",
-    "rimraf": "^5.0.7",
+    "rimraf": "^5.0.10",
     "typescript": "^5.5.4"
   },
   "eslintConfig": {
@@ -58,6 +58,6 @@
   "dependencies": {
     "@sapphire/pieces": "^4.3.1",
     "@sapphire/utilities": "^3.17.0",
-    "drizzle-orm": "^0.31.2"
+    "drizzle-orm": "^0.35.3"
   }
 }
