@@ -57,6 +57,6 @@
   ],
   "dependencies": {
     "@sapphire/snowflake": "^3.5.3",
-    "amqp-connection-manager": "^4.1.14"
+    "amqp-connection-manager": "^5.0.0"
   }
 }
